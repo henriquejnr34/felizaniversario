@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #ff6b6b;
+    --primary-color: #009c3b; /* Verde B. */
     --text-color: #ffffff;
-    --bg-overlay: rgba(0, 0, 0, 0.7);
+    --bg-overlay: rgba(0, 0, 0, 0.6);
     --card-bg: rgba(255, 255, 255, 0.1);
     --card-border: rgba(255, 255, 255, 0.2);
 }
@@ -39,7 +39,7 @@ body {
     width: 100%;
     height: 100%;
     background: var(--bg-overlay);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(1px); /* Blur bem reduzido */
     z-index: 2;
 }
 
@@ -108,13 +108,14 @@ body {
 }
 
 .photo-container {
-    width: 160px;
-    height: 160px;
+    width: 280px; /* Foto bem maior */
+    height: auto; /* Altura automática para não distorcer */
+    aspect-ratio: 1 / 1.2; /* Formato retrato */
     margin: 0 auto 2rem;
-    border-radius: 50%;
+    border-radius: 12px; /* Borda levemente arredondada, não redonda */
     border: 4px solid var(--primary-color);
     overflow: hidden;
-    box-shadow: 0 0 25px rgba(255, 107, 107, 0.5);
+    box-shadow: 0 0 25px rgba(0, 156, 59, 0.5);
 }
 
 .main-photo {
